@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.carroController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="96.0" layoutY="78.0" text="MARCA" />
+            <Label layoutX="92.0" layoutY="123.0" text="MODELO" />
+            <Label layoutX="104.0" layoutY="164.0" text="AÑO" />
+            <Label layoutX="111.0" layoutY="218.0" text="ID" />
+            <Label layoutX="184.0" layoutY="24.0" text="INFORMACION DEL CARRO">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="marcaCarro" layoutX="199.0" layoutY="74.0" prefHeight="25.0" prefWidth="208.0" />
+            <TextField fx:id="modeloCarro" layoutX="199.0" layoutY="119.0" prefHeight="25.0" prefWidth="207.0" />
+            <TextField fx:id="añoCarro" layoutX="198.0" layoutY="160.0" prefHeight="25.0" prefWidth="207.0" />
+            <Button fx:id="registrarCarro" layoutX="163.0" layoutY="333.0" mnemonicParsing="false" onAction="#accionRegistrarCarro" prefHeight="33.0" prefWidth="74.0" text="REGISTER" />
+            <TextField fx:id="idCarro" layoutX="200.0" layoutY="214.0" prefHeight="25.0" prefWidth="206.0" />
+            <Button fx:id="imprimirCarro" layoutX="369.0" layoutY="333.0" mnemonicParsing="false" onAction="#accionImprimirCarro" prefHeight="33.0" prefWidth="74.0" text="IMPRIMIR" />
+            <CheckBox fx:id="siCarro" layoutX="222.0" layoutY="276.0" mnemonicParsing="false" onAction="#accionSiCarro" text="SI" />
+            <CheckBox fx:id="noCarro" layoutX="321.0" layoutY="276.0" mnemonicParsing="false" onAction="#accionNoCarro" text="NO" />
+            <Label layoutX="87.0" layoutY="276.0" text="DISPONIBLE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
